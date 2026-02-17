@@ -8,7 +8,7 @@ Demonstrates why quoted arbitrage ≠ realizable arbitrage once you account for:
 - Partial fills
 - Transaction fees
 
-Author: Jeff Warner | Arb Bot
+Author: Jeff Warner | JM Alpha Arbitrage Bot
 """
 
 import pandas as pd
