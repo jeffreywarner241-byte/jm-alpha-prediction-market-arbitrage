@@ -8,7 +8,7 @@ Demonstrates why quoted arbitrage ≠ realizable arbitrage once you account for:
 - Partial fills
 - Transaction fees
 
-Author: Jeff & Machs | Arb Bot v2
+Author: Jeff Warner | Arb Bot
 """
 
 import pandas as pd
@@ -38,7 +38,7 @@ def walk_book_vwap(orderbook, target_qty, side='ask'):
     Returns:
     --------
     dict with keys:
-        - vwap: Volume-weighted average price
+        - vwap: Volume weighted average price
         - filled_qty: Total quantity filled
         - unfilled_qty: Quantity that couldn't be filled
         - notional: Total dollar amount (cost for asks, proceeds for bids)
@@ -101,7 +101,7 @@ def walk_book_vwap(orderbook, target_qty, side='ask'):
 
 
 # =============================================================================
-# MANUAL SANITY CHECK: Tiny 2-Level Orderbook
+# MANUAL SANITY CHECK: Tiny 2 Level Orderbook
 # =============================================================================
 
 print("="*70)
@@ -405,16 +405,10 @@ Key Learnings:
 
 6. Position sizing is critical — Size trades based on realizable edge at depth.
 
-Next Steps:
-- Plug in real orderbook data from your bot
-- Replace simplified fee model with actual venue fee schedules
-- Backtest with historical depth snapshots
-- Build dynamic position sizing based on available liquidity
 
 ---
-Built by: Jeff & Machs | Arb Bot v2
-GitHub: [Your Repo Link]
+Built by: Jeff Warner & Machs Weiscelbaum | JM Alpha
 License: MIT
 """)
 
-print("✅ Execution Realism Module v2 complete.")
+print("✅ Execution Realism Module complete.")
